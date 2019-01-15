@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>What To Wear</title>
+    <style>
+      HTML{
+        height:100%;
+      }
+      body{
+        background-image: URL('brickimdb.jpg'); 
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: large;
+        line-height: 130%;
+        margin-left: 20px;
+      }
+      h1{
+        color:goldenrod;
+        background: navy;
+        font-size: xx-large;
+        line-height: 130%;
+        padding: 10px;
+        border-radius: 10px;
+        flex: 0 0 auto;
+        width: fit-content;
+      }
+      .tagline{
+        font-size: large;
+      }
+      button{
+        background:goldenrod;
+        color:navy;
+        font-size: x-large;
+        border-style: inset;
+        border-width: 5px;
+        border-color: maroon;
+        padding: 5px;
+        width: fit-content;
+      }
+      #windowDisplay{
+        width: 20%;
+        color:goldenrod;
+        background: navy;
+        font-size: large;
+        line-height: 130%;
+        padding: none;
+        border-radius: 10px;
+        text-align: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>What To Wear<br/>
+      <div class="tagline">Your <em>comprehensive</em> guide to dressing for the conditions</div>
+    </h1>
+    <button onclick="whatToWear()">What should I wear?</button>
+    <p id="windowDisplay"></p>
+  </body>
+  <script src="js/script.js"></script>
+</HTML>
